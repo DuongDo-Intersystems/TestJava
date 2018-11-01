@@ -202,7 +202,7 @@ public class hibernateplaystocksTask5 {
     	session.beginTransaction();
 	    System.out.println("transaction started");
 	    
-    	session.createQuery("delete from Solutions_Demo.Trade").executeUpdate();
+    	session.createQuery("delete from Solutions.Demo.Trade").executeUpdate();
     	session.createQuery("delete from Solutions.Demo.Person").executeUpdate();
     	
 	    session.getTransaction().commit();

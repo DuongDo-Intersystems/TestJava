@@ -10,8 +10,7 @@ public class xepplaystocksTask1 {
 	    	
 	    	// Connect to database using EventPersister
 	        EventPersister xepPersister = PersisterFactory.createPersister();
-	        //xepPersister.connect("127.0.0.1",51773,"USER",user,pass);
-	        xepPersister.connect("104.198.220.84",27293,"USER",user,pass);
+	        xepPersister.connect("127.0.0.1",51773,"USER",user,pass);
 			System.out.println("Connected to InterSystems IRIS.");
 	        xepPersister.deleteExtent("Solutions.Demo.Trade");   // remove old test data
 	        xepPersister.importSchema("Solutions.Demo.Trade");   // import flat schema

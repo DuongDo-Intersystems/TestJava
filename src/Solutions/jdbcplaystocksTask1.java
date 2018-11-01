@@ -8,8 +8,7 @@ import com.intersystems.jdbc.IRISDataSource;
 public class jdbcplaystocksTask1 {
 	
 	public static void main(String[] args) {
-		//String dbUrl = "jdbc:IRIS://127.0.0.1:51773/USER";
-		String dbUrl = "jdbc:IRIS://104.198.220.84:27293/USER";
+		String dbUrl = "jdbc:IRIS://127.0.0.1:51773/USER";
 		String user = "superuser";
 		String pass = "SYS";
 		

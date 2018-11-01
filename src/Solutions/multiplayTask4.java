@@ -23,8 +23,7 @@ public class multiplayTask4 {
 		try {
 			// Connect to database using EventPersister, which is based on IRISDataSource
 	        EventPersister xepPersister = PersisterFactory.createPersister();
-	        //xepPersister.connect("127.0.0.1",51773,"User",user,pass); 
-	        xepPersister.connect("104.197.75.13",21652,"User",user,pass); 
+	        xepPersister.connect("127.0.0.1",51773,"User",user,pass); 
 	        System.out.println("Connected to InterSystems IRIS via JDBC.");
 	        xepPersister.deleteExtent("Solutions.Demo.StockInfo");   // remove old test data
 	        xepPersister.importSchema("Solutions.Demo.StockInfo");   // import flat schema
